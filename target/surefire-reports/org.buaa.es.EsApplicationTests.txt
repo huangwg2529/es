@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.buaa.es.EsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.617 s <<< FAILURE! - in org.buaa.es.EsApplicationTests
+org.buaa.es.EsApplicationTests  Time elapsed: 0.617 s  <<< ERROR!
+java.lang.IllegalStateException: Found multiple @SpringBootConfiguration annotated classes [Generic bean: class [org.buaa.es.ElasticSearchConfig]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\git\es\target\classes\org\buaa\es\ElasticSearchConfig.class], Generic bean: class [org.buaa.es.EsApplication]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\git\es\target\classes\org\buaa\es\EsApplication.class]]
+
