@@ -1,5 +1,7 @@
 # elasticsearch for advanced search
 
+配置 elasticsearch、从 MySQL 同步数据、使用 spring-data-elasticsearch 进行高级检索。
+
 系统分析大作业，详细写个 readme 记录下我肝了整整五天踩坑跳坑的结果。
 
 ## 1. elasticSearch
