@@ -148,7 +148,7 @@ PUT /paperes
 
 ##　5. logstash
 
-首先去官网下载安装 logstash，再去下载 mysql-connector-java 这么个驱动包，然后在 bin 目录下新建 ```mysql-es.conf``` :
+首先去官网下载安装 logstash，换上淘宝源，在 bin 目录下执行 ```./logstash-plugin install logstash-input-jdbc``` 安装 jdbc 插件，再去下载 mysql-connector-java 这么个驱动包，然后在 bin 目录下新建 ```mysql-es.conf``` :
 
 ```conf
 input {
