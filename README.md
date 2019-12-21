@@ -17,7 +17,7 @@
  transport.tcp.compress: true
 ```
 
-命令 ```sh bin/elasticsearch -d``` 后台启动。
+新建一个用户，为其分配 es 目录的权限，然后切换到该用户，执行命令 ```sh bin/elasticsearch -d``` 后台启动。
 
 此时在终端使用命令 ```curl localhost:9200``` 获得 json 结果表示成功。开放服务器 9200 端口后在自己电脑浏览器输入 ```ip:9200```也能获取相同结果。
 
@@ -44,6 +44,21 @@ put /index/type/1 # 添加文档
 {
 
 } 
+ # 查询所有（但是 kibana 并不能显示所有内容，好像有一个上限）
+GET /index/type/_search
+{
+  "query": {
+    "match_all" : {}
+  }
+}
+GET /index/type/_search # 根据某字段进行查询
+{
+  "query": {
+    "match" : {
+    	"title": "xxx"
+    }
+  }
+}
 ```
 
 ## 4. 创建索引
